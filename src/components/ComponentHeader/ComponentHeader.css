@@ -1,0 +1,20 @@
+.standard-component-header {
+  background: linear-gradient(90deg, #e2aa77 0%, rgba(226, 170, 1190, 0));
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5em;
+  margin-top: 0;
+  height: 4em;
+}
+
+.standard-component-header > h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.standard-component-header-line {
+  height: 0.1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  background: linear-gradient(90deg, #e2aa77 0%, rgba(226, 170, 1190, 0));
+}

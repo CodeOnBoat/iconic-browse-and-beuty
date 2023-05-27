@@ -1,0 +1,40 @@
+.first-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.first-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 80%;
+  border: 1px solid grey;
+  padding: 2em;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 0.9);
+  border-radius: 5px;
+  border: 2px solid #fff;
+  max-width: 30em;
+}
+
+.first-image-image {
+  height: 80vh;
+}
+
+.first-image-box-button {
+  width: 14em;
+  border-radius: 5px;
+  height: 3em;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.first-image-box-button:hover {
+  background-color: white;
+  color: black;
+}
