@@ -3,7 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
   font-family: Poppins;
   font-size: small;
+}
+
+body {
+  color: white;
+}
+
+:root {
+  --primary-color: #e2aa77;
 }
