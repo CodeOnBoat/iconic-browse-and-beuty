@@ -1,11 +1,10 @@
 import React from "react";
 import "./FirstImage.css";
-import Image from "../../images/landingPic.webp";
+import Image from "../../images/landingPic.jpeg";
 
 export const FirstImage = () => {
   return (
     <div className="first-image-container">
-      <img src={Image} className="first-image-image" />
       <div className="first-image-box">
         <p className="first-image-box-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
