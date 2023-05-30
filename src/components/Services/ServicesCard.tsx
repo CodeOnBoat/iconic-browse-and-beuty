@@ -1,13 +1,13 @@
-import React from "react";
+import './Services.css';
 
 type ServicesCardProps = {
-  card: { title: string; image: string };
+  card: { name: string; image: string };
 };
 
 export const ServicesCard = ({ card }: ServicesCardProps) => {
-  return;
-  <div className="services-card-container">
-    <img src={card.image} />
-    <div className="services-card-title-container">{card.title}</div>
-  </div>;
+  return (
+    <div className="services-card-container">
+      <div className="services-card-title-container">{card.name}</div>
+    </div>
+  );
 };

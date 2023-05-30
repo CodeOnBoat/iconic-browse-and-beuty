@@ -3,3 +3,11 @@
   border: 1px solid black;
   overflow-x: hidden;
 }
+
+.main-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em;
+  color: var(--primary-color);
+}
