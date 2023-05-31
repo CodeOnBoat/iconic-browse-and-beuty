@@ -3,20 +3,19 @@ import "./Header.css";
 import Logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+interface HeaderProps {
+  goToServices: () => void;
+}
+
+export const Header = ({ goToServices }: HeaderProps) => {
   const activeRef = useRef<HTMLInputElement>(null);
 
   const toggleActive = (b: boolean) => {
     activeRef.current!.checked = b;
   };
 
-  const goToServices = () => {
-
-  }
-
   return (
     <>
-      {" "}
       <div className="header-block">
         <div className="header-container">
           <div className="header-logo-container">
@@ -42,7 +41,10 @@ export const Header = () => {
                 <li>
                   <div
                     className="link-burger"
-                    onClick={() => goToServices()}
+                    onClick={() => {
+                      goToServices();
+                      toggleActive(false);
+                    }}
                   >
                     Services
                   </div>
@@ -84,7 +86,7 @@ export const Header = () => {
               <Link className="link" to={"/"}>
                 Home
               </Link>
-              <div className="link">
+              <div className="link" onClick={goToServices}>
                 Services
               </div>
               <Link className="link" to={"/prices"}>
@@ -93,7 +95,7 @@ export const Header = () => {
               <Link className="link" to={"/contacts"}>
                 Contacts
               </Link>
-              <Link className="link" to={"/aboutme"}>
+              <Link className="link aboutMe" to={"/aboutme"}>
                 About me
               </Link>
             </div>

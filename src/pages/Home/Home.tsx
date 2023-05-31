@@ -3,10 +3,15 @@ import "./Home.css";
 import { FirstImage } from "../../components/FirstImage/FirstImage";
 import { Services } from "../../components/Services/Services";
 
-export const Home = () => {
+interface HomeProps {
+  servicesRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Home = ({ servicesRef }: HomeProps) => {
   return (
     <div>
       <FirstImage />
+      <div ref={servicesRef}></div>
       <Services />
     </div>
   );

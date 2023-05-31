@@ -50,6 +50,11 @@
   background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;
+  margin-right: 0.5em;
+  font-weight: bold;
+}
+.link.aboutMe {
+  margin-right: 2em;
 }
 .link:hover {
   background-color: white;
@@ -79,7 +84,6 @@
     color: white;
     width: 100%;
     justify-content: end;
-    padding-right: 6em;
     align-items: center;
   }
   .header-line-gradient {
