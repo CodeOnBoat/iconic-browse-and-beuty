@@ -10,6 +10,10 @@ export const Header = () => {
     activeRef.current!.checked = b;
   };
 
+  const goToServices = () => {
+
+  }
+
   return (
     <>
       {" "}
@@ -36,13 +40,12 @@ export const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <div
                     className="link-burger"
-                    to={"/"}
-                    onClick={() => toggleActive(false)}
+                    onClick={() => goToServices()}
                   >
                     Services
-                  </Link>
+                  </div>
                 </li>
                 <li>
                   <Link
@@ -78,12 +81,12 @@ export const Header = () => {
           <div className="links-line-container">
             <div className="header-line-gradient"></div>
             <div className="header-links-container">
-              <Link className="link" to={"/home"}>
+              <Link className="link" to={"/"}>
                 Home
               </Link>
-              <Link className="link" to={"/home"}>
+              <div className="link">
                 Services
-              </Link>
+              </div>
               <Link className="link" to={"/prices"}>
                 Prices
               </Link>
