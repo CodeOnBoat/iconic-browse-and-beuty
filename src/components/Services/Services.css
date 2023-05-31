@@ -33,4 +33,11 @@
     align-items: flex-end;
     padding: 1em;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.services-card-container:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
 }

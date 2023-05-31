@@ -1,15 +1,15 @@
 import React from "react";
 import "./Services.css";
 import { ComponentHeader } from "../ComponentHeader/ComponentHeader";
-import ServicesObject from "../../contents/services";
 import { ServicesCard } from "./ServicesCard";
+import {services} from '../../contents/services';
 
 export const Services = () => {
   return (
     <div className="services-container">
       <ComponentHeader title="Services" />
       <div className="services-carousel">
-        {ServicesObject.map((s) => (
+        {services.map((s) => (
           <ServicesCard card={s} />
         ))}
       </div>

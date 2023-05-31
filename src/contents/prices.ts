@@ -1,15 +1,15 @@
 export const prices = [
-  {
-    title: "LASHLIFT & BROW LAMINATION",
-    elements: [
-      "-Brow lamination - 60 minuter, 500 kr",
-      "-Lashlift & forming av bryn - 60 minuter, 790 kr",
-      "-Kombolift inkl. färg & keratinbehandling - 60 minuter, 1 050 kr",
-      "-Lash Lift- 60 minuter, 550 kr",
-      "-row lamination inkl. färgning & keratinbehandling60 minuter, 550 kr",
-      "-Lash Lift inkl. färgning & keratinbehandling 60 minuter, 690 kr",
-    ],
-  },
+  // {
+  //   title: "LASHLIFT & BROW LAMINATION",
+  //   elements: [
+  //     {name:"Brow lamination", time: "60 minuter", price : "500 kr",},
+  //     {name:"Lashlift & forming av bryn", time: "60 minuter", price :"790 kr"},
+  //     {name:"Kombolift inkl. färg & keratinbehandling", time:  "60 minuter", price :  "1 050 kr"},
+  //     {name:"Lash Lift", time: "60 minuter", price : "550 kr"},
+  //     {name:"row lamination inkl. färgning & keratinbehandling", time : "60 minuter", price : "550 kr"},
+  //     {name:"Lash Lift inkl. färgning & keratinbehandling", time : "60 minuter", price :"690 kr"}
+  //   ],
+  // },
   {
     title: "FRANSAR & BRYN",
     elements: [
