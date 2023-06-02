@@ -12,7 +12,7 @@ export const FirstImage = () => {
           a amet, earum fugit! Sed cupiditate culpa corrupti consectetur
           accusantium modi quo excepturi.
         </p>
-        <button className="first-image-box-button">Make an appointment</button>
+        <a className="first-image-box-button" href="https://www.bokadirekt.se/places/iconic-brows-beauty-45783" target="_blank" >Boka Tid</a>
       </div>
     </div>
   );

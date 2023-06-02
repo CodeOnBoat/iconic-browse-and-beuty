@@ -25,7 +25,7 @@ export const Contacts = () => {
     <div className="contact-container">
       <>
         <div className="contact-block">
-          <h1 className="main-title">Working hours</h1>
+          <h1 className="main-title-left">Working hours</h1>
           <p>
             {workingHours.map((w) => (
               <div>{w}</div>
@@ -33,7 +33,7 @@ export const Contacts = () => {
           </p>
         </div>
         <div className="contact-block">
-          <h1 className="main-title">Contact</h1>
+          <h1 className="main-title-left">Contact</h1>
           <p>
             {contact.map((c) => (
               <div>{c}</div>

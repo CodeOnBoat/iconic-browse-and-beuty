@@ -7,8 +7,8 @@ import { Prices } from "./pages/Prices/Prices";
 import { Contacts } from "./pages/Contacts/Contacts";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
-import { services } from "./contents/services";
 import { OneProduct } from "./pages/OneProduct/OneProduct";
+import {services} from './contents/services';
 
 function App() {
   const servicesRef = React.useRef<HTMLDivElement>(null);
@@ -33,7 +33,7 @@ function App() {
           {services.map((p) => (
             <Route
               path={`/services/${p.id}`}
-              element={<OneProduct title={p.name} text={p.text} />}
+              element={<OneProduct title={p.name} text={p.description} />}
             />
           ))}
         </Routes>

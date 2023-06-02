@@ -1,6 +1,8 @@
-const services = [
+export const services = [
   {
+    id: "1",
     name: "LASHLIFT & BROW LAMINATION",
+    image: "",
     description: `Brow lamination eller browlift som det också kallas är en brynbehandling som ändrar ögonbrynens riktning och som skapar ett mer fylligare, upplyftande utseende.
     Formning av bryn ingår i behandlingen.
     Behandlingen är helt smärtfri och varar 6-8 veckor.
@@ -41,6 +43,8 @@ const services = [
   },
   {
     name: "FRANSAR & BRYN",
+    image: "",
+    id: "2",
     description: ``,
     subServices: [
       {
@@ -71,6 +75,8 @@ const services = [
     ],
   },
   {
+    id: "3",
+    image: "",
     name: "ANSIKTSBEHANDLING",
     description: `Det erbjuds olika ansiktsbehandlingar i salongen som passar varje kunds behov,
     budget och smak. Kontakta mig gärna om du har frågor gällande
@@ -94,6 +100,8 @@ const services = [
     subServices: [],
   },
   {
+    id: "4",
+    image: "",
     name: "Microneedling & BB Glow",
     description: `Microneedling är en avancerad fraktionerad nålbehandling som ökar hudens produktion av kollagen. En behandling går till så att tolv sterila engångsnålar skapar upp till 3000 microkanaler i sekunden ned i huden. Microneedling anses vara en av de säkraste behandlingsmetoderna för naturlig hudvård.
     Beroende på vilka indikationer som behandlas går nålarna olika djupt ned i huden. Genom att skada huden på ett kontrollerat sätt sker en naturlig reaktion då kroppen vill reparera skadan; det är då tillväxtfaktorer frigörs och celler i huden börjar producera nytt kollagen. Samtidigt slussas ned aktiva ämnen genom de microkanaler som bildats
@@ -119,6 +127,8 @@ Brun-utan-sol.
   },
   {
     name: "BB Glow",
+    id: "5",
+    image: "",
     description: `BB Glow koreansk microneedling är årets mest modern behandling.
     Detta är den senaste utvecklingen av koreanska kosmetologer för hälsosamt och strålande utseende. Lämplig för både kvinnor och män och har inga åldersbegränsningar.
     BB Glow behandlingen är en sort av Microneedlingbehandling (fraktionell mesoterapi) där BB-serum appliceras med hjälp av sterila NANO-nålar.
@@ -189,11 +199,100 @@ Brun-utan-sol.
       },
     ],
   },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
-  { name: "LASHLIFT & BROW LAMINATION", description: ``, subServices: [] },
+  {
+    name: "TRÅDNING",
+    image: "",
+    id: "6",
+    description: ``,
+    subServices: [
+      {
+        name: "råding hela ansiktet",
+        duration: null,
+        price: "450 kr",
+      },
+      {
+        name: "Tråding hela ansiktet inkl. formning av ögonbryn",
+        duration: "45 minuter",
+        price: "550 kr",
+      },
+      {
+        name: "Tråding hela ansiktet inkl. formning av ögonbryn& färgning",
+        duration: "45 minuter",
+        price: "600 kr",
+      },
+      {
+        name: "Trådning av käke & haka",
+        duration: "20 minuter",
+        price: "200 kr",
+      },
+      {
+        name: "Trådning av överläpp",
+        duration: "15 minuter",
+        price: "150 kr",
+      },
+    ],
+  },
+  {
+    id: "7",
+    name: "Kosmetisk Tatuering Eyeliner/ Lashliner",
+    image: "",
+    description: ``,
+    subServices: [
+      {
+        name: "Kosmetisk Tatuering Eyeliner/ Lashliner",
+        duration: "90 minuter",
+        price: "3300 kr",
+      },
+      {
+        name: "Återbesök Kosmetisk Tatuering Eyeliner",
+        duration: "60 minuter",
+        price: "550 kr",
+      },
+    ],
+  },
+  {
+    name: "Kosmetisk tatuering läppar",
+    id: "8",
+    image: "",
+    description: `Först väljs en läppigment enligt kundens önskemål och sen skapas en naturlig form på läpparna. Man kan välja mellan en hel tatuering
+  kontur samt fyllning och en mer skuggad effekt även kallad läppglanseffekten.`,
+    subServices: [
+      {
+        name: "Återbesök kosmetisk tatuering läppar inom 12 mån",
+        duration: "90 minuter",
+        price: "1 790 kr",
+      },
+      {
+        name: "Kosmetisk tatuering Läppigmentering",
+        duration: "120 minuter",
+        price: "3700 kr",
+      },
+      {
+        name: "Återbesök Kosmetisk Tatuering Läppar",
+        duration: "60 minuter",
+        price: "550 kr",
+      },
+    ],
+  },
+  {
+    name: "Kosmetisk tatuering ögonbryn",
+    description: ``,
+    subServices: [],
+    id: "9",
+    image: "",
+  },
+  {
+    name: "Kosmetisk tatuering ögonbryn",
+    description: ``,
+    subServices: [],
+    id: "9",
+    image: "",
+  },
+  {
+    name: "Kosmetisk tatuering ögonbryn",
+    description: ``,
+    subServices: [],
+    id: "9",
+    image: "",
+  },
 ];

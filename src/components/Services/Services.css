@@ -1,43 +1,59 @@
 .services-carousel {
-    display: flex;
-    gap: 2em;
-    padding: 2em;
-    overflow-x: scroll;
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+  overflow-x: scroll;
 }
 
 .services-card-title-container {
-    background-color: rgba(0,0,0,.5);
-    z-index: 1;
-    border: 2px solid #FFFFFF;
-    font-size: 1.5em;
-    height: 3em;
-    width: 100%;
-    display: flex;
-    align-items: top;
-    border-radius: 5px;
-    justify-content: left;
-    bottom: 1em;
-    padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border: 2px solid #ffffff;
+  font-size: 1.5em;
+  height: 3em;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  border-radius: 5px;
+  justify-content: left;
+  bottom: 1em;
+  padding: 1em;
 }
 
 .services-card-container {
-    min-width: 20em;
-    width: 20em;
-    height: 27em;
-    display: flex;
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-image: url('../../images/cardsample.webp');
-    background-size: cover;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 1em;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+  min-width: 20em;
+  width: 20em;
+  height: 27em;
+  display: flex;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/cardsample.webp");
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .services-card-container:hover {
-    transform: scale(1.02);
-    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width > 1200px) {
+  .services-carousel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (width > 1450px) {
+  .services-carousel {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1500px;
+  }
 }

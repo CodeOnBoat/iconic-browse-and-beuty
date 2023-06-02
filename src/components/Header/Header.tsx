@@ -35,7 +35,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/"}
                     onClick={() => toggleActive(false)}
                   >
-                    Home
+                Hem
                   </Link>
                 </li>
                 <li>
@@ -46,7 +46,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                       toggleActive(false);
                     }}
                   >
-                    Services
+                Behandlingar
                   </div>
                 </li>
                 <li>
@@ -55,7 +55,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/prices"}
                     onClick={() => toggleActive(false)}
                   >
-                    Prices
+                Priser
                   </Link>
                 </li>
                 <li>
@@ -64,7 +64,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/contacts"}
                     onClick={() => toggleActive(false)}
                   >
-                    Contacts
+                Kontakter
                   </Link>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/aboutme"}
                     onClick={() => toggleActive(false)}
                   >
-                    About me
+                Om Salongen
                   </Link>
                 </li>
               </ul>
@@ -84,19 +84,19 @@ export const Header = ({ goToServices }: HeaderProps) => {
             <div className="header-line-gradient"></div>
             <div className="header-links-container">
               <Link className="link" to={"/"}>
-                Home
+                Hem
               </Link>
               <div className="link" onClick={goToServices}>
-                Services
+                Behandlingar
               </div>
               <Link className="link" to={"/prices"}>
-                Prices
+                Priser
               </Link>
               <Link className="link" to={"/contacts"}>
-                Contacts
+                Kontakter
               </Link>
               <Link className="link aboutMe" to={"/aboutme"}>
-                About me
+                Om Salongen
               </Link>
             </div>
             <div className="header-line-gradient"></div>

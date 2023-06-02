@@ -36,6 +36,11 @@
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: large ;
 
 }
 

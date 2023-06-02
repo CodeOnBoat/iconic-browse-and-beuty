@@ -7,7 +7,7 @@ import {services} from '../../contents/services';
 export const Services = () => {
   return (
     <div className="services-container">
-      <ComponentHeader title="Services" />
+      <ComponentHeader title="Behandlingar" />
       <div className="services-carousel">
         {services.map((s) => (
           <ServicesCard card={s} />

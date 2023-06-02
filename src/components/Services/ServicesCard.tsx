@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./Services.css";
 
 type ServicesCardProps = {
-  card: { name: string; image: string; id: number };
+  card: { name: string; image: string; id: string };
 };
 
 export const ServicesCard = ({ card }: ServicesCardProps) => {
