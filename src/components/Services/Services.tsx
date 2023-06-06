@@ -2,12 +2,12 @@ import React from "react";
 import "./Services.css";
 import { ComponentHeader } from "../ComponentHeader/ComponentHeader";
 import { ServicesCard } from "./ServicesCard";
-import {services} from '../../contents/services';
+import { services } from "../../contents/services";
 
 export const Services = () => {
   return (
     <div className="services-container">
-      <ComponentHeader title="Behandlingar" />
+      <ComponentHeader title="Behandlingar" direction="left" />
       <div className="services-carousel">
         {services.map((s) => (
           <ServicesCard card={s} />

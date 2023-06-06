@@ -1,6 +1,6 @@
-a{
+.contact-info {
   text-decoration: none;
-  color: white
+  color: var(--primary-color);
 }
 
 .appointments-container,
@@ -29,15 +29,19 @@ a{
   width: 95%;
 }
 
+
 .footer-lineGradient {
   width: 100%;
   height: 0.1em;
   background: linear-gradient(
     90deg,
     rgba(226, 170, 119, 0) 0%,
-    #e2aa77 49.08%,
+    var(--primary-color) 49.08%,
     rgba(226, 170, 119, 0) 100%
   );
+}
+.footer-lineGradient.first{
+  display: none;
 }
 .footer-section.title {
   font-size: medium;
@@ -49,7 +53,11 @@ a{
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   width: 50%;
-  height: 2em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .workingHours-list {
@@ -83,17 +91,23 @@ a{
   display: none;
 }
 @media screen and (width > 1000px) {
+  .footer-lineGradient{
+    display: block;
+    margin-top: 5em;
+  }
   .footer-mobile-container {
     display: none;
   }
   .footer-desktop-container {
+    color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 20em;
-    background-color: var(--primary-color);
-    margin-top: 6em;
+    margin-top: 1em;
+    border-top: 2px;
+    
   }
   .footer-sec {
     height: 70%;
@@ -104,6 +118,7 @@ a{
   .appointments-container,
   .workingHours-container,
   .contacts-container {
+    color: var(--primary-color);
     justify-content: flex-start;
     align-items: left;
     gap: 2em;
@@ -121,19 +136,51 @@ a{
     gap: 2em;
   }
   .btn-bookAppointment {
+    text-decoration: none;
     width: 100%;
     background-color: transparent;
-    border: 2px solid white;
-border-radius: 5px;
-color: white;
-display: flex; 
-justify-content: center;
-align-items: center;
-cursor: pointer;
-
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
   .btn-bookAppointment:hover {
-    background-color: white;
-    color: var(--primary-color)
+    background-color: var(--primary-color);
+    color: white;
   }
+  .footer-lineGradient.first{
+    display: block;
+  }
+
+
+  .arrow-footer{
+    cursor: pointer;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    transition: transform 0.3s ease-in-out;
+    animation: jump 0.5s ease-in-out;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .arrow-footer:hover {
+    transform: translateY(-5px);
+  }
+  .visible {
+animation-name: jump;  }
 }

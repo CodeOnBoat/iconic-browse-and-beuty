@@ -1,0 +1,95 @@
+.reviews-container {
+  color: black;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.review-list {
+  overflow-y: scroll;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2em;
+  border-radius: 20px;
+  margin-top: 2em;
+  justify-content: top;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 1em;
+}
+.review-list::-webkit-scrollbar {
+  display: none;
+}
+
+.bokadirect-logo {
+  height: 2em;
+}
+
+.review-list.absolute {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.score-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
+  height: 3em;
+  margin-bottom: 0;
+  gap: 0.4em;
+}
+
+@media screen and (width > 1000px) {
+  .review-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.review-container {
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 1em 2em;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 1em;
+}
+
+.review-header-date {
+  color: #888;
+}
+
+.avg-score {
+  font-size: xx-large;
+}
+
+.avg-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-show-more-button {
+  width: 10em;
+  height: 3em;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 1em auto;
+  font-size: large;
+  cursor: pointer;
+}
+
+.reviews-show-more-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

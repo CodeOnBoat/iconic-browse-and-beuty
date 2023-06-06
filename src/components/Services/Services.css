@@ -1,19 +1,22 @@
 .services-carousel {
   display: flex;
   gap: 2em;
-  padding: 2em;
+  margin: 0 auto;
+  width: 100%;
   overflow-x: scroll;
+  padding-bottom: 2em;
+  padding-left: 2em;
 }
 
 .services-card-title-container {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   font-size: 1.5em;
   height: 3em;
   width: 100%;
   display: flex;
-  align-items: top;
+  align-items: center;
   border-radius: 5px;
   justify-content: left;
   bottom: 1em;
@@ -27,9 +30,9 @@
   display: flex;
   border-radius: 5px;
   background-repeat: no-repeat;
-  background-image: url("../../images/cardsample.webp");
   background-size: cover;
   justify-content: center;
+  background-position: center;
   align-items: flex-end;
   padding: 1em;
   box-sizing: border-box;
@@ -42,18 +45,31 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.services-carousel::-webkit-scrollbar {
+  height: 0.4em;
+}
+
+.services-carousel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.services-carousel::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 50px;
+}
+
 @media screen and (width > 1200px) {
   .services-carousel {
-    width: 100%;
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
   }
 }
-@media screen and (width > 1450px) {
+@media screen and (width > 1400px) {
   .services-carousel {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1500px;
+    padding-left: 0;
+    max-width: 1400px;
   }
 }

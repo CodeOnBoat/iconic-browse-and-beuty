@@ -5,12 +5,10 @@ import SampleImage from "../../images/descarga.jpeg";
 export const AboutMe = () => {
   return (
     <div className="about-me-container">
-      <img src={SampleImage} className="about-me-image" />
       <div>
-        <h1 className="main-title">About me</h1>
+        <h1 className="main-title">Om Salongen</h1>
         <p className="about-me-text">
-          {" "}
-          Om mig <br />
+           <br />
           <br />
           Välkommen till Iconic Brows & Beauty! Jag heter Ofelia, det är mig du
           får träffa när du kommer hit och det är jag som utför alla

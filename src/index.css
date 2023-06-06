@@ -6,11 +6,30 @@
   font-size: small;
 }
 
-body {
+html, body {
   color: white;
   overflow-x: hidden;
 }
 
 :root {
   --primary-color: rgb(226, 170, 119);
+  --primary-color: rgb(113, 90, 26);
+  --primary-color-transparent : rgba(113, 90, 26, 0.4);
+  --primary-color-opaque : rgba(113, 90, 26, 0.8);
+  --primary-color: rgb(92, 44, 49);
+  --primary-color-transparent : rgba(92, 44, 49, 0.6);
+  --primary-color-opaque : rgba(92, 44, 49, 0.8);
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+background-color: transparent
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 50px;
 }

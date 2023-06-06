@@ -1,6 +1,13 @@
-const getReviews = async () => {
+export type review = {
+  id: string;
+  review: { score: number; text: string };
+  createdAt: string;
+  author: { name: string };
+};
+
+export const getReviews = async () => {
   const reviews = await fetch(
-    "https://www.bokadirekt.se/api/places/getEmployeeReviews/88002"
+    "https://us-central1-iconic-2c1d7.cloudfunctions.net/app/reviews"
   );
-  return reviews;
+  return reviews.json();
 };

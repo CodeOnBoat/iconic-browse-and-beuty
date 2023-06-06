@@ -1,20 +1,68 @@
 .standard-component-header {
-  background: linear-gradient(90deg, #e2aa77 0%, rgba(226, 170, 1190, 0));
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding: 0.5em;
-  margin-top: 0;
+  padding: 0.5em 2em;
   height: 4em;
+  min-width: 100vw;
+}
+
+.standard-component-header.left {
+  justify-content: left;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    rgba(226, 170, 1190, 0)
+  );
+}
+
+.standard-component-header.right {
+  justify-content: right;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--primary-color) 100%
+  );
+
 }
 
 .standard-component-header > h1 {
-  font-size: 2em;
+  font-size: 1.4em;
+  margin-right: 2em;
   font-weight: 300;
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  .standard-component-header > h1 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .standard-component-header > h1 {
+    font-size: 2em;
+  }
 }
 .standard-component-header-line {
   height: 0.1em;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  background: linear-gradient(90deg, #e2aa77 0%, rgba(226, 170, 1190, 0));
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.standard-component-header-line.left {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    rgba(226, 170, 1190, 0)
+  );
+}
+.standard-component-header-line.right {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--primary-color) 100%
+  );
+}
+
+.component-header-container {
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
 }

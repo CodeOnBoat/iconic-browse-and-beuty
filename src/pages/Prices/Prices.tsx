@@ -1,6 +1,6 @@
 import React from "react";
 import { prices } from "../../contents/prices";
-import './Prices.css';
+import "./Prices.css";
 
 export const Prices = () => {
   return (
@@ -10,14 +10,23 @@ export const Prices = () => {
         {prices.map((p) => {
           return (
             <div>
-              <h1 className="main-title price">{p.title}</h1>
-              {p.elements.map((e) => (
-                <div className="price-item">{e}</div>
-              ))}
+              <h1 className="main-title price">{p.name}</h1>
+              <table className="prices-table">
+                <th>name</th>
+                <th>time</th>
+                <th>price</th>
+                {p.elements.map((e) => (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td>{e.time}</td>
+                    <td>{e.price}</td>
+                  </tr>
+                ))}
+              </table>
             </div>
           );
         })}
       </div>
     </div>
-  )
+  );
 };

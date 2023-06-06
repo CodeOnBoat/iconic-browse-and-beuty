@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Header.css";
 import Logo from "../../images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface HeaderProps {
   goToServices: () => void;
@@ -14,12 +14,19 @@ export const Header = ({ goToServices }: HeaderProps) => {
     activeRef.current!.checked = b;
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="header-block">
         <div className="header-container">
           <div className="header-logo-container">
-            <img src={Logo} alt="" className="logo" />
+            <img
+              src={Logo}
+              alt=""
+              className="logo"
+              onClick={() => navigate("/")}
+            />
           </div>
           <div className="header-hamburger-menu">
             <input type="checkbox" id="active" ref={activeRef} />
@@ -35,7 +42,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/"}
                     onClick={() => toggleActive(false)}
                   >
-                Hem
+                    Hem
                   </Link>
                 </li>
                 <li>
@@ -46,7 +53,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                       toggleActive(false);
                     }}
                   >
-                Behandlingar
+                    Behandlingar
                   </div>
                 </li>
                 <li>
@@ -55,7 +62,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/prices"}
                     onClick={() => toggleActive(false)}
                   >
-                Priser
+                    Priser
                   </Link>
                 </li>
                 <li>
@@ -64,7 +71,7 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/contacts"}
                     onClick={() => toggleActive(false)}
                   >
-                Kontakter
+                    Kontakter
                   </Link>
                 </li>
                 <li>
@@ -73,8 +80,18 @@ export const Header = ({ goToServices }: HeaderProps) => {
                     to={"/aboutme"}
                     onClick={() => toggleActive(false)}
                   >
-                Om Salongen
+                    Om Salongen
                   </Link>
+                </li>
+                <li>
+                  <a
+                    className="
+                  bokatid-header-btn"
+                    href="https://www.bokadirekt.se/places/iconic-brows-beauty-45783"
+                    target="_blank"
+                  >
+                    Boka Tid
+                  </a>
                 </li>
               </ul>
               <div className="btn-burger-header-container"></div>
@@ -95,9 +112,16 @@ export const Header = ({ goToServices }: HeaderProps) => {
               <Link className="link" to={"/contacts"}>
                 Kontakter
               </Link>
-              <Link className="link aboutMe" to={"/aboutme"}>
+              <Link className="link" to={"/aboutme"}>
                 Om Salongen
               </Link>
+              <a
+                className="link bokatid"
+                href="https://www.bokadirekt.se/places/iconic-brows-beauty-45783"
+                target="_blank"
+              >
+                Boka Tid
+              </a>
             </div>
             <div className="header-line-gradient"></div>
           </div>
