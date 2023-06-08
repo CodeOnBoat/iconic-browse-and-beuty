@@ -114,8 +114,8 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-sec appointments-container">
-          <h4 className="footer-section title">Appointments</h4>
-          <p>Book your appointment here!</p>
+          <h4 className="footer-section title">Boka Tid Nu!</h4>
+          <p>Boka din behandlingar har</p>
           <a
             className="btn-bookAppointment"
             href="https://www.bokadirekt.se/places/iconic-brows-beauty-45783"
@@ -136,8 +136,8 @@ export const Footer = () => {
       <div className="footer-mobile-container">
         <div className="footer-lineGradient"></div>
         <div className="footer-section appointments-container">
-          <h4 className="footer-section title">Appointments</h4>
-          <p>Book your appointment here!</p>
+          <h4 className="footer-section title">Boka Tid Nu!</h4>
+          <p>Boka din behandlingar har</p>
           <a
             className="btn-bookAppointment"
             href="https://www.bokadirekt.se/places/iconic-brows-beauty-45783"
@@ -161,7 +161,7 @@ export const Footer = () => {
         </div>
         <div className="footer-lineGradient"></div>
         <div className="footer-section contacts-container">
-          <h4 className="footer-section title">Contacts</h4>
+          <h4 className="footer-section title">Kontakter</h4>
           <div>
             <b>Telefonnummer: </b>
             <a

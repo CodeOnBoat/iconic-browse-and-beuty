@@ -47,9 +47,9 @@ export const services = [
     id: "3",
     image: Service2Image,
     name: "ANSIKTSBEHANDLING",
-    description: `Det erbjuds olika ansiktsbehandlingar i salongen som passar varje kunds behov, budget och smak. Kontakta mig gärna om du har frågor gällande ansiktsbehandlingarna så kan jag enkelt guida dig till rätt behandling som passar dig och din hud bäst!Det finns olika sorter behandlingar. De kan vårda huden, förbereda huden till meraktiva behandlingar eller stimulerar.
+    description: `Det erbjuds olika ansiktsbehandlingar i salongen som passar varje kunds behov, budget och smak. Kontakta mig gärna om du har frågor gällande ansiktsbehandlingarna så kan jag enkelt guida dig till rätt behandling som passar dig och din hud bäst!Det finns olika sorter behandlingar. De kan vårda huden, förbereda huden till mer aktiva behandlingar eller stimulerar.
 
-Fråga gärna så guidar jag dig till rättbehandling beroende på dina behov och dina förutsättningar. Här är några populära behandlingar som erbjuds i salongen: <br/><br/>
+Fråga gärna så guidar jag dig till rätt behandling beroende på dina behov och dina förutsättningar. Här är några populära behandlingar som erbjuds i salongen: <br/><br/>
 <h3>Hydrafacial behandling eller kemisk peeling</h3>
 Synlig förbättring av hud. Den minskar djupa linjer, synliga ålderstecken, pigment tecken och fina linjer. Rekommenderas i första hand till alla för regelbundet hudvård en gång 1 månad eller vid behov.<br/>
 Kemisk peeling kan läggas till som extra tillval till Hydrafacial behandling och kan förstärka resultatet. Ej rekommenderas under sommaren. Förändringar efter solskador, reducerar fina rynkor, torr hud och fet seborré, vid post - acne eller pigmentering.
@@ -215,7 +215,7 @@ Metoden är semi permanent precis som stråtekniken. Här målar vi upp en form 
 Varar i ca 1,5 – 3 år. Här tatuerar vi ett helt bryn – likt ett sminkat resultat. Denna metod tillämpas oftast när du har en gammal tatuering som du vill tatuera över eller när du har väldigt lite egna strån.
 
 <h2>Kosmetisk Tatuering Kombo</h2>
-Här tatuerar vi först in strån med ett handverktyg och skuggar över med maskin med fokus på underkant, brynkropp samt brynsvans.  
+Här tatuerar vi först in strån med ett handverktyg och skuggar över med maskin med fokus på underkant, brynkropp samt brynsvans. 
 Passar alla hudtyper och är tillför den kund som vill ha både strån samt en mer sminkad effekt i ett.
 `,
     subServices: [
@@ -303,7 +303,7 @@ Passar alla hudtyper och är tillför den kund som vill ha både strån samt en 
         name: "Återbesök Kosmetisk tatuering inom 1 månad",
         time: "-",
         price: "550 kr",
-      }
+      },
     ],
   },
   {

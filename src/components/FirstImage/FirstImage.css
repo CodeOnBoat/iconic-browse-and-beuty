@@ -12,6 +12,7 @@
   -webkit-box-shadow: inset 0px 0px 12px 9px rgba(255, 255, 255, 1);
   -moz-box-shadow: inset 0px 0px 12px 9px rgba(255, 255, 255, 1);
   box-shadow: inset 0px 0px 12px 9px rgba(255, 255, 255, 1);
+  margin-top: 8em;
 }
 
 .first-image-box {
@@ -52,4 +53,12 @@
 .first-image-box-button:hover {
   background-color: transparent;
   color: white;
+}
+@media screen and (width>1000px) {
+  .first-image-container{
+    margin-top: 0em;
+
+  }
+  
+
 }

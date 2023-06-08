@@ -4,20 +4,20 @@ import { Map } from "../../components/Map/Map";
 
 export const Contacts = () => {
   const workingHours = [
-    "Monday : 09:00 - 17:00",
-    "Tuesday : 09:00 - 17:00",
-    "Wednesday : 09:00 - 17:00",
-    "Thursday : 09:00 - 17:00",
-    "Friday : 09:00 - 17:00",
-    "Saturday : closed",
-    "Sunday : closed",
+    "Måndag: 10:30 - 19:00",
+    "Tisdag: 10:30 - 19:00",
+    "Onsdag: 10:30 - 19:00",
+    "Torsdag: 10:30 - 19:00",
+    "Fredag: 10:30 - 19:00",
+    "Lördag: 10:00 - 19:00",
+    "Söndag: 11:00 - 19:00",
   ];
 
   return (
     <div className="contact-container">
       <>
         <div className="contact-block">
-          <h1 className="main-title-left">Working hours</h1>
+          <h1 className="main-title-left">Öppettider</h1>
           <p>
             {workingHours.map((w) => (
               <div>{w}</div>
@@ -25,7 +25,7 @@ export const Contacts = () => {
           </p>
         </div>
         <div className="contact-block">
-          <h1 className="main-title-left">Contact</h1>
+          <h1 className="main-title-left">Kontakter</h1>
           <div>
             <b>Telefonnummer: </b>
             <a
