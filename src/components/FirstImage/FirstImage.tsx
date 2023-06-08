@@ -1,6 +1,6 @@
 import React from "react";
 import "./FirstImage.css";
-import Image from "../../images/landingPic.jpeg";
+import Image from "../../images/landingPic.webp";
 
 export const FirstImage = () => {
   return (

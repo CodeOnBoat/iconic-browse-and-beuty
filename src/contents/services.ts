@@ -1,8 +1,8 @@
-import Service1Image from "../images/service1.png";
-import Service2Image from "../images/service2.png";
-import Service3Image from "../images/service3.png";
-import Service4Image from "../images/service4.png";
-import Service5Image from "../images/service5.png";
+import Service1Image from "../images/service1.webp";
+import Service2Image from "../images/service2.webp";
+import Service3Image from "../images/service3.webp";
+import Service4Image from "../images/service4.webp";
+import Service5Image from "../images/service5.webp";
 
 export const services = [
   {
